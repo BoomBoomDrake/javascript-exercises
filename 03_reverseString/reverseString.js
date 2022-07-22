@@ -13,6 +13,11 @@ const reverseString = function(str) {
     console.log('result', result);
 
     return result
+
+    // Alternative (easier)
+    // return str.split('').reverse().join('');
+    //
+    // Better to use array methods 
 };
 
 // Do not edit below this line
