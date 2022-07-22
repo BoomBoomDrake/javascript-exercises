@@ -12,17 +12,22 @@ const removeFromArray = function(strArr, ...args) {
     
     return strArr;
 }
-//
-    //args.forEach( str => matchMap[str] = true);
-    //console.log(matchMap);
-//
-    //strArr.forEach( str => {
-    //  if (!matchMap[str]) {
-    //    resultArr.push(str);
-    //  }
-    //})
-//
-    //return resultArr;
+
+// Alternative
+//function (...args) {
+//  const array = args[0];
+//  const newArray = []
+//  
+//  array.forEach((item) => {
+//      if (!args.includes(item)) {
+//          newArray.push(item)
+//      }
+//  });
+//  return newArray;
+
+// OR THIS
+// const array = args[0]
+// return array.filter(val => !args.includes(val));
 
 
 // Do not edit below this line
